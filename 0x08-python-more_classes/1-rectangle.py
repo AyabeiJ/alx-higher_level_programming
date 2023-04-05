@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Defines a class Rectangle."""
+"""Defince Rectangle class."""
 
 class Rectangle:
     """
@@ -14,8 +14,6 @@ class Rectangle:
         width(self, value)
         height(self)
         height(self, value)
-        area(self)
-        perimeter(self)
     """
     def __init__(self, width=0, height=0):
         """ Initialize rectangles """
@@ -49,13 +47,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-    def area(self):
-        """ Return width * height """
-        return self.__width * self.__height
-
-    def perimeter(self):
-        """ Return 2*width + 2*height (or return 0 if width or height is 0)"""
-        if self.__width == 0 or self.__height == 0:
-            return 0
-        return (2 * self.__width) + (2 * self.height)
