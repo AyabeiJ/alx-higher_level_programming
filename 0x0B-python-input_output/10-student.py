@@ -25,4 +25,4 @@ class Student:
                 if i in self.__dict__:
                     res[i] = self.__dict__[i]
             return res
-        return self.
+        return self.__dict__

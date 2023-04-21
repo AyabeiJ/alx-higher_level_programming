@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 """Documentation for Rectangle class"""
 
 
@@ -26,3 +27,17 @@ class Rectangle(BaseGeometry):
         self.__height = height
         super().integer_validator("width", width)
         super().integer_validator("height", height)
+=======
+"""Rectangle class Module"""
+BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+
+class Rectangle(BaseGeometry):
+    """Rectangle class"""
+    def __init__(self, width, height):
+        """Initilize rectangle method"""
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
+>>>>>>> 217dfab9b336e76edc5a44b26d4f70f47dc0590f
