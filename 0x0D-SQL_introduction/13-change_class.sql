@@ -1,11 +1,3 @@
--- Lists all genres from the database hbtn_0d_tvshows along with the number of
--- shows linked to each.
--- Does not display genres without linked shows.
--- Records are ordered by descening number of show linke.
-SELECT g.'name' AS 'genre',
-COUNT(*) AS 'number_of_shows'
-FROM 'tv_genres' AS g
-INNER JOIN 'tv_show_genres' AS t
-ON g. 'id' = t. 'genre_i'
-GROUP BY g. 'name'
-ORDER BY 'number_of_shows' DESC;
+-- Removes all records with a score <= 5 in the table second_table in my MySQL server.
+DELETE FROM `second_table`
+WHERE `score` <= 5;
