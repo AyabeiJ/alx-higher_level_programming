@@ -1,2 +1,2 @@
--- Lists all databases of the MySQL server.
-SHOW DATBASES;
+-- Lists all databases of my MySQL server.
+SHOW DATABASES;
